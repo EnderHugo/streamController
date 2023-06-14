@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Stream controller app",
+    "short_name": "Stream controller converter",
+    "description": "A stream deck style stream controller for mobile",
+    "start_url": "/obs/streamController",
+    "background_color": "#6c00ff",
+    "theme_color": "#6c00ff",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/icon512.png",
+            "sizes": "512x512"
+        }
+    ]
+}
