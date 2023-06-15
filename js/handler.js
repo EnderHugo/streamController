@@ -1,12 +1,4 @@
-/**
- * @returns {string} OBS Browser plugin version
- */
-window.obsstudio.pluginVersion
-// => 2.17.0
-/**
- * @typedef {number} Level - The level of permissions. 0 for NONE, 1 for READ_OBS (OBS data), 2 for READ_USER (User data), 3 for BASIC, 4 for ADVANCED and 5 for ALL
- */
-lastscene = "scene1"
+
 
 function getJSONStream(){
     var filePath = "assets/stream.json"
@@ -21,6 +13,19 @@ function getJSONStream(){
     return array 
   }
 
+  
+try {
+
+  /**
+   * @returns {string} OBS Browser plugin version
+  */
+ window.obsstudio.pluginVersion
+ // => 2.17.0
+ /**
+  * @typedef {number} Level - The level of permissions. 0 for NONE, 1 for READ_OBS (OBS data), 2 for READ_USER (User data), 3 for BASIC, 4 for ADVANCED and 5 for ALL
+ */
+
+lastscene = "scene1"
 function changeScene(){
   array = getJSONStream();
   scene = array["scene"];
@@ -33,3 +38,8 @@ function changeScene(){
 $(function(){
   setInterval(changeScene, 300);
 });
+}
+
+catch(e){
+  alert(e)
+}
