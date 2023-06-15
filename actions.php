@@ -16,7 +16,8 @@
                     <form name="actions" action="">
                         <input type="text" name="valueholder" id="valueholder" style="display: none;">
                         <input name="action" onclick="changeValue(this.value)" type="button" value="action1" />
-                        <input name="action" onclick="changeValue(this.value)" type="button" value="action1" />
+                        <input name="action" onclick="changeValue(this.value)" type="button" value="action2" />
+                        <input name="action" onclick="changeValue(this.value)" type="button" value="action3" />
                     </form>
                 </div>
             </div>
